@@ -3,14 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
 
 import { AppComponent }  from './app.component';
-import { AppService } from "./app.service";
+import { UserModule } from "./user/user.module";
+import { SpotifyTestModule } from "./spotify-test/spotify-test.module";
 
 @NgModule({
   imports:      [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    UserModule,
+    SpotifyTestModule
   ],
-  providers:    [ AppService ],
+  providers:    [],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

@@ -1,5 +1,5 @@
 /**
- * Created by mancr on 3/6/2017.
+ * Created by mancr on 3/12/2017.
  */
 
 import { Injectable } from "@angular/core";
@@ -8,7 +8,7 @@ import { User } from "./user";
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class AppService {
+export class UserService {
   private usersUrl = 'http://localhost:8080/users';  // URL to web api
 
   constructor(private http: Http) { }

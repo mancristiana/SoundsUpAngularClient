@@ -29,10 +29,10 @@ export class GoogleSigninComponent implements AfterViewInit {
             that.attachSignin(that.element.nativeElement.firstChild);
         });
     }
-    public attachSignin(element) {
+    public attachSignin(element: any) {
         let that = this;
         this.auth2.attachClickHandler(element, {},
-            function (googleUser) {
+            function (googleUser: any) {
 
                 let profile = googleUser.getBasicProfile();
                 console.log('Token || ' + googleUser.getAuthResponse().id_token);
@@ -43,7 +43,7 @@ export class GoogleSigninComponent implements AfterViewInit {
                 //YOUR CODE HERE
 
 
-            }, function (error) {
+            }, function (error: any) {
                 console.log(JSON.stringify(error, undefined, 2));
             });
     }

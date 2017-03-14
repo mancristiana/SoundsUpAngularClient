@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+.menu {
+  background-color: #4C4D4C;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.menu .brand {
+  float: left;
+  font-size: 250%;
+  color: #FF0037;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+.menu ul li {
+  float: right;
+}
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.2em;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: darker(#4C4D4C, 20%);
+}

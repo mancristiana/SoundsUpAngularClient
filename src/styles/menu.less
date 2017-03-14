@@ -1,0 +1,35 @@
+@import "@variables";
+@import "@mixins";
+
+.menu {
+    background-color: @theme-dark-contrast;
+    .nospacing();
+
+    .brand {
+        float: left;
+        font-size: 250%;
+        color: @theme-primary;
+    }
+
+    ul {
+        list-style-type: none;
+        .nospacing();
+        overflow: hidden;
+
+        li {
+            float: right;
+        }
+
+    }
+
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1em 1.2em;
+        text-decoration: none;
+        &:hover {
+            background-color: darker(@theme-dark-contrast, 20%);
+        }
+    }
+}

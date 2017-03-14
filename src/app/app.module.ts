@@ -8,6 +8,7 @@ import { UserModule } from "./user/user.module";
 import { SpotifyTestModule } from "./spotify-test/spotify-test.module";
 import { GoogleSigninComponent } from "./google-signin.component";
 import { SpotifyTestComponent } from "./spotify-test/spotify-test.component";
+import { MenuComponent } from "./menu.component";
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SpotifyTestComponent } from "./spotify-test/spotify-test.component";
     providers: [],
     declarations: [
         AppComponent,
-        GoogleSigninComponent
+        GoogleSigninComponent,
+        MenuComponent
     ],
     bootstrap: [AppComponent]
 })

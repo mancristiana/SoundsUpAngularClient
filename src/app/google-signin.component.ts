@@ -3,7 +3,7 @@ declare const gapi: any;
 
 @Component({
     selector: 'google-signin',
-    template: '<button id="googleBtn">Google Sign-In</button>'
+    template: `<button id="googleBtn" class="button-google">Sign in with Google</button>`
 })
 export class GoogleSigninComponent implements AfterViewInit {
 

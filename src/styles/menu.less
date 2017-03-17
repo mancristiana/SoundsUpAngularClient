@@ -2,34 +2,53 @@
 @import "@mixins";
 
 .menu {
-    background-color: @theme-dark-contrast;
+    background-color: @theme-dark;
+    overflow: auto;
     .nospacing();
+    padding: 0 10%;
+    a {
+        border-bottom: 2px solid @theme-dark;
+        &:hover {
+            border-bottom: 2px solid @theme-primary-shade;
+        }
+    }
 
-    .brand {
+    a.brand {
         float: left;
-        font-size: 250%;
+        padding: 1em 2em 0.5em;
         color: @theme-primary;
+        transition: 1s;
+        &:hover {
+            border-bottom: 2px solid @theme-dark;
+            img {
+                position: relative;
+                top: -0.3em;
+            }
+        }
+        span {
+            font: 20pt @font-heading;
+            position: relative;
+            top: -0.3em;
+        }
+        img {
+            height: 2em;
+            padding-right: 2em;
+        }
     }
 
     ul {
         list-style-type: none;
         .nospacing();
         overflow: hidden;
-
         li {
             float: right;
+            a.menu-item {
+                font-size: 120%;
+                display: block;
+                padding: 1em 2em;
+            }
         }
 
     }
 
-    a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 1em 1.2em;
-        text-decoration: none;
-        &:hover {
-            background-color: darker(@theme-dark-contrast, 20%);
-        }
-    }
 }

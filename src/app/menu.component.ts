@@ -7,10 +7,14 @@ import { Component } from "@angular/core";
     selector: 'menu',
     template: `
     <div class="menu">
-        <a class="brand">{{ name }}</a>
+        <a class="brand">
+            <img src="img/music-player.svg"/>
+            <span>{{ name }}</span>
+        </a>
+        
         <ul>
-            <li><a routerLink="/signin"><i class="fa fa-signin" aria-hidden="true"></i></a></li>
-            <li><a routerLink="/search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li><a class="menu-item" routerLink="/signin"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a class="menu-item" routerLink="/search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
     </div>
         

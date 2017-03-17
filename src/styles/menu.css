@@ -1,14 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700,500');
 .menu {
-  background-color: #4C4D4C;
+  background-color: #1d1c1c;
+  overflow: auto;
   margin: 0;
   padding: 0;
   border: 0;
+  padding: 0 10%;
 }
-.menu .brand {
+.menu a {
+  border-bottom: 2px solid #1d1c1c;
+}
+.menu a:hover {
+  border-bottom: 2px solid #7f0b1c;
+}
+.menu a.brand {
   float: left;
-  font-size: 250%;
-  color: #FF0037;
+  padding: 1em 2em 0.5em;
+  color: #aa1b30;
+  transition: 1s;
+}
+.menu a.brand:hover {
+  border-bottom: 2px solid #1d1c1c;
+}
+.menu a.brand:hover img {
+  position: relative;
+  top: -0.3em;
+}
+.menu a.brand span {
+  font: 20pt 'Oswald', sans-serif;
+  position: relative;
+  top: -0.3em;
+}
+.menu a.brand img {
+  height: 2em;
+  padding-right: 2em;
 }
 .menu ul {
   list-style-type: none;
@@ -20,13 +45,8 @@
 .menu ul li {
   float: right;
 }
-.menu a {
+.menu ul li a.menu-item {
+  font-size: 120%;
   display: block;
-  color: white;
-  text-align: center;
-  padding: 1em 1.2em;
-  text-decoration: none;
-}
-.menu a:hover {
-  background-color: darker(#4C4D4C, 20%);
+  padding: 1em 2em;
 }

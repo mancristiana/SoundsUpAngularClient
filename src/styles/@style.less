@@ -1,23 +1,58 @@
 @import "@variables";
 @import "@mixins";
 
+//Shorthand cheatsheet
+// font: font-style font-variant font-weight font-size/line-height font-family;
+
 html, body, * {
     .nospacing();
+    box-sizing: border-box;
 }
 
 body {
     background-color: @theme-dark-bg;
     color: @theme-dark-text;
-    font-family: 'Roboto', sans-serif;
+    font-family: @font-normal;
+    font-size: 100%;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lato', sans-serif;
+    font-family: @font-heading;
 }
 
 h1 {
     color: @theme-primary;
-    font-size: 250%;
+    font-size: 150%;
 }
 
+a {
+    cursor: pointer;
+    color: @theme-dark-text;
+    text-decoration: none;
+    &:hover {
+        color: @theme-primary;
+    }
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin:auto;
+}
+
+.content {
+    margin: 0 10%;
+    padding: 2em;
+}
+
+
+
+
 @import "menu";
+@import "button";

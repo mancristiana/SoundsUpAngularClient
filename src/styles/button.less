@@ -1,0 +1,47 @@
+@import "@variables";
+@import "@mixins";
+
+@lh: 1.2em;
+.square-variant(@color, @bg) {
+    color: @color;
+    background: @bg;
+    margin: 1em;
+    padding: 0.8em 1.2em;
+    border-radius: 4px;
+    font-size: 14pt;
+    line-height: @lh;
+    cursor: pointer;
+    .transition();
+    &:hover {
+        background-color: darken(@bg, 20%);
+    }
+    &:active, &focus {
+        background-color: darken(@bg, 10%);
+    }
+
+    i.badge {
+        margin-right: 1.2em;
+    }
+}
+
+.button {
+    font-family: @font-heading;
+    text-transform: uppercase;
+}
+
+.button-default {
+    .square-variant(white, @theme-dark);
+}
+
+.button-google {
+    @lh: 2.8em;
+    .square-variant(@theme-dark-text, @theme-dark);
+    font: 500 14pt @font-normal;
+    padding: 0.2*@lh 0.2*@lh 0.2*@lh 1.25*@lh;
+    background: @theme-dark url('../img/btn_google_light_normal_ios.svg')0 0 no-repeat;
+}
+
+input {
+    .square-variant(white, @theme-dark);
+    font-family: @font-normal;
+}

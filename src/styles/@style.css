@@ -125,6 +125,31 @@ a:hover {
 .button-default i.badge {
   margin-right: 1.2em;
 }
+.button-primary {
+  color: white;
+  background: #aa1b30;
+  margin: 1em;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  font-size: 14pt;
+  line-height: 1.2em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-primary:hover {
+  background-color: #520d17;
+}
+.button-primary:active,
+.button-primaryfocus {
+  background-color: #7e1424;
+}
+.button-primary i.badge {
+  margin-right: 1.2em;
+}
 .button-google {
   color: #cfcfcf;
   background: #1d1c1c;
